@@ -25,7 +25,7 @@ angular.module('cidadesegura', ['ionic'])
 
 .config(function($stateProvider, $urlRouterProvider, $ionicConfigProvider) {
         $ionicConfigProvider.tabs.position('bottom'); //bottom
-
+        
         $stateProvider
             .state('home', {
                 url: '/home',
@@ -45,6 +45,21 @@ angular.module('cidadesegura', ['ionic'])
             .state('consultar', {
                 url: '/consultar',
                 templateUrl: 'templates/consultar.html',
+                controller: 'ConsultarCtrl'
+            })
+            .state('map1', {
+                url: '/map1',
+                templateUrl: 'templates/map1.html',
+                controller: 'ConsultarCtrl'
+            })
+            .state('map2', {
+                url: '/map2',
+                templateUrl: 'templates/map2.html',
+                controller: 'ConsultarCtrl'
+            })
+            .state('map3', {
+                url: '/map3',
+                templateUrl: 'templates/map3.html',
                 controller: 'ConsultarCtrl'
             })
             .state('estatistica', {
